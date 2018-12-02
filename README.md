@@ -19,13 +19,11 @@
 
 Checks integrity of Yandex.Money payment notification by comparing SHA of strigified params including a secret shared with Yandex.
 
-Here are the ![official docs](Yandex documentation: https://tech.yandex.ru/money/doc/dg/reference/notification-p2p-incoming-docpage/#notification-p2p-incoming__verify-notification) for the notification service.
-
+Here are the ![official docs](https://tech.yandex.ru/money/doc/dg/reference/notification-p2p-incoming-docpage/#notification-p2p-incoming__verify-notification) for the notification service.
 
 ## Requirements
 
 1. [Ruby 2.5.0](https://www.ruby-lang.org) or higher
-
 
 ## Setup
 
@@ -34,7 +32,6 @@ Add the following to your Gemfile:
 ```sh
 gem "integral-yandex-money-notification_validator"
 ```
-
 
 ## Usage
 
@@ -61,8 +58,7 @@ end
 
 `validator.errors` returns an Array of message strings — most often only 1 message, but who knows.
 
-`secret` is obtained from Yandex.Money ![somewehre in the settings](https://money.yandex.ru/myservices/online.xml). Recommended to keep in Rails credentials, ENV variable or elsewhere secure.
-
+`secret` is obtained from Yandex.Money [somewehre in the settings](https://money.yandex.ru/myservices/online.xml). Recommended to keep in Rails credentials, ENV variable or elsewhere secure.
 
 ## Tests
 
@@ -71,7 +67,6 @@ To test, run:
 ```sh
 bundle exec rake
 ```
-
 
 ## Credits
 
