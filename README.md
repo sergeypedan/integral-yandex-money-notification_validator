@@ -1,6 +1,8 @@
 # Yandex.Money notification validator
 
 [![Gem Version](https://badge.fury.io/rb/integral-yandex-money-notification_validator.svg)](http://badge.fury.io/rb/integral-yandex-money-notification_validator)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5b7ba150248e751ccbc9/maintainability)](https://codeclimate.com/github/sergeypedan/integral-yandex-money-notification_validator/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5b7ba150248e751ccbc9/test_coverage)](https://codeclimate.com/github/sergeypedan/integral-yandex-money-notification_validator/test_coverage)
 
 <!-- Tocer[start]: Auto-generated, don't remove. -->
 
