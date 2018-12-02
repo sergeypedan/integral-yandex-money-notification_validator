@@ -25,7 +25,10 @@ Here are the official docs for the [notification service](https://tech.yandex.ru
 
 ## Requirements
 
-[Ruby 2.5.0](https://www.ruby-lang.org) or higher.
+- [Ruby 2.5.0](https://www.ruby-lang.org) or higher.
+- An account in [Yandex.Money](https://money.yandex.ru)
+- A notifications secret key (obtained from Yandex.Money [somewehre in the settings](https://money.yandex.ru/myservices/online.xml))
+- Rails is assumed but not required
 
 ## Setup
 
@@ -60,7 +63,7 @@ end
 
 `validator.errors` returns an Array of message strings — most often only 1 message, but who knows.
 
-`secret` is obtained from Yandex.Money [somewehre in the settings](https://money.yandex.ru/myservices/online.xml). Recommended to keep in Rails credentials, ENV variable or elsewhere secure.
+`secret` is recommended to be keept in an ENV variable, Rails credentials or elsewhere secure.
 
 ## Tests
 

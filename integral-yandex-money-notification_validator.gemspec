@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.license  = "MIT"
 
   spec.metadata = {
-    "source_code_uri" => "https://github.com/sergeypedan/integral-yandex-money-notification_validator",
+    "source_code_uri" => "https://github.com/sergeypedan/integral-yandex-money-notification_validator/blob/master/lib/integral/yandex/money/notification_validator.rb",
     "changelog_uri"   => "https://github.com/sergeypedan/integral-yandex-money-notification_validator/blob/master/CHANGES.md",
     # "bug_tracker_uri" => "http://integral-design.ru/issues"
   }
