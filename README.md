@@ -63,7 +63,7 @@ end
 
 `validator.errors` returns an Array of message strings — most often only 1 message, but who knows.
 
-`secret` is recommended to be keept in an ENV variable, Rails credentials or elsewhere secure.
+`secret` is recommended to be kept in an ENV variable, Rails credentials or elsewhere secure.
 
 ## Tests
 
