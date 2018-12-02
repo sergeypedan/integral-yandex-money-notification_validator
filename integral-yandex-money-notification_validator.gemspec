@@ -9,14 +9,14 @@ Gem::Specification.new do |spec|
   spec.platform = Gem::Platform::RUBY
   spec.authors = ["Sergey Pedan"]
   spec.email = ["sergey.pedan@gmail.com"]
-  spec.homepage = ""
-  spec.summary = ""
+  spec.homepage = "http://integral-design.ru"
+  spec.summary = "Checks integrity of Yandex.Money payment notification by comparing SHA of strigified params including a secret shared with Yandex."
   spec.license = "MIT"
 
   spec.metadata = {
-    "source_code_uri" => "",
-    "changelog_uri" => "/blob/master/CHANGES.md",
-    "bug_tracker_uri" => "/issues"
+    "source_code_uri" => "http://integral-design.ru",
+    "changelog_uri" => "http://integral-design.ru/blob/master/CHANGES.md",
+    "bug_tracker_uri" => "http://integral-design.ru/issues"
   }
 
 

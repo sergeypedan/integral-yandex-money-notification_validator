@@ -3,7 +3,7 @@
 module Integral
   module Yandex
     module Money
-      module NotificationValidator
+      class NotificationValidator
         # Gem identity information.
         module Identity
           def self.name
@@ -11,7 +11,7 @@ module Integral
           end
 
           def self.label
-            "Integral Yandex Money Notification Validator"
+            "Yandex.Money notification validator by Integral Design"
           end
 
           def self.version
