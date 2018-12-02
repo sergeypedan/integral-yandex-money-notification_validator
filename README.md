@@ -1,4 +1,4 @@
-# Integral Yandex Money Notification Validator
+# Yandex.Money notification validator
 
 [![Gem Version](https://badge.fury.io/rb/integral-yandex-money-notification_validator.svg)](http://badge.fury.io/rb/integral-yandex-money-notification_validator)
 
@@ -19,7 +19,7 @@
 
 Checks integrity of Yandex.Money payment notification by comparing SHA of strigified params including a secret shared with Yandex.
 
-Here are the ![official docs](https://tech.yandex.ru/money/doc/dg/reference/notification-p2p-incoming-docpage/#notification-p2p-incoming__verify-notification) for the notification service.
+Here are the [official docs](https://tech.yandex.ru/money/doc/dg/reference/notification-p2p-incoming-docpage/#notification-p2p-incoming__verify-notification) for the notification service.
 
 ## Requirements
 
