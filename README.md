@@ -31,7 +31,7 @@ Here are the official docs for the [notification service](https://tech.yandex.ru
 
 Add the following to your Gemfile:
 
-```sh
+```ruby
 gem "integral-yandex-money-notification_validator"
 ```
 
