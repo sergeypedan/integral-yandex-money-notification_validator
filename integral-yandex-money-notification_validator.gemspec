@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.metadata = {
     "source_code_uri" => "https://github.com/sergeypedan/integral-yandex-money-notification_validator/blob/master/lib/integral/yandex/money/notification_validator.rb",
     "changelog_uri"   => "https://github.com/sergeypedan/integral-yandex-money-notification_validator/blob/master/CHANGES.md",
-    # "bug_tracker_uri" => "http://integral-design.ru/issues"
+    "bug_tracker_uri" => "https://github.com/sergeypedan/integral-yandex-money-notification_validator/issues"
   }
 
 
