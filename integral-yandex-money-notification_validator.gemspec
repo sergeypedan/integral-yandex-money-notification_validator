@@ -4,19 +4,19 @@ $LOAD_PATH.append File.expand_path("lib", __dir__)
 require "integral/yandex/money/notification_validator/identity"
 
 Gem::Specification.new do |spec|
-  spec.name = Integral::Yandex::Money::NotificationValidator::Identity.name
-  spec.version = Integral::Yandex::Money::NotificationValidator::Identity.version
+  spec.name     = Integral::Yandex::Money::NotificationValidator::Identity.name
+  spec.version  = Integral::Yandex::Money::NotificationValidator::Identity.version
   spec.platform = Gem::Platform::RUBY
-  spec.authors = ["Sergey Pedan"]
-  spec.email = ["sergey.pedan@gmail.com"]
-  spec.homepage = "http://integral-design.ru"
-  spec.summary = "Checks integrity of Yandex.Money payment notification by comparing SHA of strigified params including a secret shared with Yandex."
-  spec.license = "MIT"
+  spec.authors  = ["Sergey Pedan"]
+  spec.email    = ["sergey.pedan@gmail.com"]
+  spec.homepage = "https://github.com/sergeypedan/integral-yandex-money-notification_validator"
+  spec.summary  = "Checks integrity of Yandex.Money payment notification by comparing SHA of strigified params including a secret shared with Yandex."
+  spec.license  = "MIT"
 
   spec.metadata = {
-    "source_code_uri" => "http://integral-design.ru",
-    "changelog_uri" => "http://integral-design.ru/blob/master/CHANGES.md",
-    "bug_tracker_uri" => "http://integral-design.ru/issues"
+    "source_code_uri" => "https://github.com/sergeypedan/integral-yandex-money-notification_validator",
+    "changelog_uri"   => "https://github.com/sergeypedan/integral-yandex-money-notification_validator/blob/master/CHANGES.md",
+    # "bug_tracker_uri" => "http://integral-design.ru/issues"
   }
 
 
