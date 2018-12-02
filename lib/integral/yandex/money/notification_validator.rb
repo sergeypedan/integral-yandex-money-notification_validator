@@ -15,23 +15,22 @@ module Integral
         PERMITTED_HASH_TYPES = ["ActionController::Parameters", "Hash"].freeze
         REQUIRED_KEYS        = %w[amount codepro datetime notification_type operation_id sender].freeze
 
-        def initialize(params:, secret:)
+
+        def initialize params:, secret:
           fail ArgumentError, "Yandex.Money notifications secret is required" if secret.to_s == ""
           validate_params_hash!(params)
-
           @secret = secret
           @params = params
           @errors = []
         end
 
-        def errors
-          @errors
-        end
+        attr_reader :errors
+
 
         def valid?
           return false unless all_param_values_present?
           return false unless integrity_correct?
-          return true
+          true
         end
 
 
@@ -40,11 +39,11 @@ module Integral
         def all_param_values_present?
           missing_keys = REQUIRED_KEYS.select { |key| @params[key].to_s == "" }
           return true if missing_keys.empty?
-          (@errors << "Required `params` keys missing: #{missing_keys.uniq.join(', ')}") and return false
+          (@errors << "Required `params` keys missing: #{missing_keys.uniq.join(", ")}") and return false
         end
 
 
-        def encode_sha(string)
+        def encode_sha string
           Digest::SHA1.hexdigest string
         end
 
@@ -56,23 +55,22 @@ module Integral
         end
 
 
-        def params_with_secret(params)
-          params.merge({ "notification_secret" => @secret })
+        def params_with_secret params
+          params.merge("notification_secret" => @secret)
         end
 
 
-        def stringify_params(params)
+        def stringify_params params
           KEYS_FOR_DIGEST.map { |key| params[key] }.join("&")
           # this way and not just `.to_s` is to enforce required order of params
         end
 
 
-        def validate_params_hash!(params)
+        def validate_params_hash! params
           names = PERMITTED_HASH_TYPES.map { |name| "`#{name}`" }.join(" or ")
           valid = PERMITTED_HASH_TYPES.include? params.class.to_s
           fail ArgumentError, "`params` must be a #{names}, you passed #{params.inspect}" unless valid
         end
-
       end
     end
   end
